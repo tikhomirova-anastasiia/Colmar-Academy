@@ -1,0 +1,243 @@
+/*Universal Styles*/
+html{
+  font-size: 16px;
+  color: rgb(57,58,59);
+  line-height: 1.2;
+}
+h2{
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Catamaran', sans-serif;
+}
+h3{
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: 'Catamaran', sans-serif;
+}
+h4{
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Catamaran', sans-serif;
+}
+h6{
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Catamaran', sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*Page Layout*/
+.body {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.header,
+.learn-new,
+.practice,
+.start-learning,
+.thesis,
+.footer{
+  width:100%;
+}
+/*Header*/
+.header{
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo{
+  display: flex;
+  justify-content: flex-start;
+}
+.header .logo object {
+  height: 2rem;
+  width: auto;
+  margin-left: 1.5rem;
+}
+.header .logo h2,
+.header .logo h3 {
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 0.5rem;
+}
+
+.navigation li{
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+/*"Learn Something New" Section*/
+.learn-new {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(232,232,232);
+}
+.learn-new .img-container {
+  width: 60%;
+  height:auto;
+}
+.learn-new .img-container img{
+  width:95%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+.learn-new .column {
+  width: 30%;
+  height: auto;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items:center;
+  margin-left: 2rem;
+}
+.learn-new .column h2,
+.learn-new .column h4,
+.learn-new .column p{
+  width: 100%;
+  height: 2rem;
+}
+
+.learn-new .column h6{
+  background-color: rgb(192,192,192);
+  width: 12rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: white;
+}
+
+/*"Keep Practicing" section styling*/
+.practice {
+  display: inline-flex;
+  width: 100%;
+  height:auto;
+}
+.practice .left-column {
+  width:60%;
+  height: auto;
+}
+.practice .right-column{
+  width: 40%;
+}
+.practice .left-column .img-container img{
+  width: 98%;
+  height:auto;
+  margin: 2rem 1.5rem;
+}
+.practice .left-column .text-container h2,
+.practice .left-column .text-container p {
+  margin-bottom: 1rem;
+  margin: 2rem 1.5rem;
+}
+.practice .right-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.practice .right-column .small-img img{
+  width:60%;
+  height: auto;
+  margin: 1rem 1rem;
+}
+.practice .right-column .content {
+  width: 65%;
+  height:auto;
+}
+.practice .right-column .orientation,
+.practice .right-column .guest-lecture,
+.practice .right-column .campus {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+}
+.practice .right-column .guest-lecture{
+  background-color: rgb(232,232,232)
+}
+.practice .right-column .content h4,
+.practice .right-column .content p{
+  margin-bottom: .8rem;
+}
+.practice .right-column .content h4{
+  margin-top: 1rem;
+}
+.practice .right-column .content{
+  margin-right: 2rem;
+}
+
+/* "Start-learning" section */
+.start-learnign{
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.start-learning .heading {
+  width: 100%;
+  height: auto;
+  background-color: rgb(232,232,232);
+}
+.start-learning .heading h2{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+ .start-learning .courses{
+  width: 50rem;
+  height: auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  background-color: rgb(232,232,232);
+}
+
+.courses .soft,
+.courses .data{
+  margin-left: 4.5rem;
+  margin-right: 2rem;
+}
+
+.courses .design,
+.courses .marketing {
+  margin-right: 4.5rem;
+  margin-left: 2rem;
+}
+.courses .data,
+.courses .business,
+.courses .marketing{
+  margin-top: 2rem;
+}
+.courses .img-cont-courses img{
+  width: 10rem;
+  height: auto;
+}
+.courses .text-courses{
+  width: 10rem;
+  height:auto;
+}
+
+
+
+
+.thesis .video-container video{
+  width:60%;
+  height:auto;
+}
