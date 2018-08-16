@@ -26,7 +26,7 @@ h6{
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -182,7 +182,7 @@ p {
 }
 
 /* "Start-learning" section */
-.start-learnign{
+.start-learning{
   width: 100%;
   height:auto;
   display: flex;
@@ -201,41 +201,59 @@ p {
   text-align: center;
 }
  .start-learning .courses{
-  width: 50rem;
+  width: 100%;
   height: auto;
-  justify-content: flex-start;
+  display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
   background-color: rgb(232,232,232);
 }
-
+.courses .soft,
+.courses .data,
+.courses .design,
+.courses .marketing,
+.courses .business,
+.courses .comp-art {
+  width: 27%;
+  height:auto;
+  background-color: white;
+}
 .courses .soft,
 .courses .data{
   margin-left: 4.5rem;
   margin-right: 2rem;
 }
-
 .courses .design,
-.courses .marketing {
+.courses .marketing{
   margin-right: 4.5rem;
   margin-left: 2rem;
+}
+
+.courses {
+  margin-bottom: 2rem;
+}
+.courses .img-cont-courses img{
+  width:100%;
+  height: auto;
+}
+.courses .text-courses h4{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.courses .text-courses p{
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.courses .text-courses{
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .courses .data,
 .courses .business,
 .courses .marketing{
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-.courses .img-cont-courses img{
-  width: 10rem;
-  height: auto;
-}
-.courses .text-courses{
-  width: 10rem;
-  height:auto;
-}
-
-
-
 
 .thesis .video-container video{
   width:60%;
