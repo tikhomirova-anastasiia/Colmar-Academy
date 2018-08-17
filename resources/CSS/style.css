@@ -2,7 +2,7 @@
 html{
   font-size: 16px;
   color: rgb(57,58,59);
-  line-height: 1.2;
+  line-height: 1.4;
 }
 h2{
   font-size: 1.4rem;
@@ -255,7 +255,97 @@ p {
   margin-bottom: 2rem;
 }
 
-.thesis .video-container video{
+/* Thesis Section Styling */
+.thesis {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.thesis .heading {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.thesis .columns {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.thesis .left-column{
+  width: 60%;
+  height: auto;
+}
+.thesis .left-column video {
+  width: 90%;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.thesis .left-column .text-container {
+  margin-left: 1.5rem;
+}
+.thesis .left-column .text-container h4{
+  margin-bottom: 0.5rem;
+}
+.thesis .left-column .text-container p{
+  margin-bottom: 2rem;
+}
+
+.thesis .right-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.thesis .right-column .small-img img{
   width:60%;
+  height: auto;
+  margin: 1rem 1rem;
+}
+.thesis .right-column .content {
+  width: 65%;
   height:auto;
+}
+.thesis .right-column .fisma,
+.thesis .right-column .now-then {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+}
+
+.thesis .right-column .content h4,
+.thesis .right-column .content p{
+  margin-bottom: .8rem;
+}
+.thesis .right-column .content h4{
+  margin-top: 1rem;
+}
+.thesis .right-column .content{
+  margin-right: 2rem;
+}
+
+/* Footer styling*/
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-top: 0.3px solid rgb(232,232,232);
+}
+.footer .copyright,
+.footer .terms-and-privacy{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer .terms-and-privacy span {
+  margin-right: 1.5rem;
+}
+.footer .copyright {
+  margin-left: 1.5rem;
 }
