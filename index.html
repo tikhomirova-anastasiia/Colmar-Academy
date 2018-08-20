@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="body">
-      <!-- Header Section-->
+      <!--Desktop: Header Section-->
       <div class="header">
         <div class="logo">
           <object type="image/svg+xml" data="./resources/Images/ic-logo.svg">
@@ -29,6 +29,7 @@
           </nav>
         </div>
       </div>
+      <!--Mobile: Header-->
       <div class="header-mobile">
         <object type="image/svg+xml" data="./resources/Images/ic-logo.svg">
           Your Browser Does Not Support Scalable Vector Graphics
@@ -43,7 +44,7 @@
           Your Browser Does Not Support Scalable Vector Graphics
         </object>
       </div>
-      <!--"Learn Something New" Section-->
+      <!--Desktop:"Learn Something New" Section-->
       <div class="learn-new">
         <div class="img-container">
           <img src="./resources/Images/banner.jpg" alt="Image">
@@ -51,11 +52,11 @@
         <div class="column">
           <h2>Learn something new every day</h2>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-          <div class="button">
-            <h6>Start here</h6>
+          <h6 id="button">Start here</h6>
           </div>
         </div>
       </div>
+      <!--Mobile: "Learn Something New" Section-->
       <div class="learn-new-mobile">
         <img src="./resources/Images/banner.jpg" alt="Image">
         <h2>Learn something new every day</h2>
@@ -114,7 +115,29 @@
           </div>
         </div>
       </div>
-      <!--Start Learning Section-->
+      <!-- Mobile: Practice Section -->
+      <div class="practice-mobile">
+        <div class="orientation">
+          <img src="./resources/Images/information-orientation-mobile.jpg" alt="Images">
+          <h4>Orientation Date</h4>
+          <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+          <p id="read-more-mobile"> Read More</p>
+        </div>
+        <div class="campus">
+          <img src="./resources/Images/information-campus-mobile.jpg" alt="Image">
+          <h4>Our Campus</h4>
+          <p>Find which campus is close by you</p>
+          <p id="read-more-mobile"> Read More</p>
+        </div>
+        <div class="guest-lecture">
+          <img src="./resources/Images/information-guest-lecture-mobile.jpg" alt="Image">
+          <h4>Our guest lecture</h4>
+          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+          <p id="read-more-mobile"> Read More</p>
+        </div>
+
+      </div>
+      <!-- Desktop: Start Learning Section-->
       <div class="start-learning">
         <!-- heading -->
         <div class="heading">
@@ -190,7 +213,17 @@
           </div>
         </div>
       </div>
-      <!-- Thesis Section-->
+      <!--Mobile: Start Learning Section-->
+      <div class="start-learning-mobile">
+        <h2>Start Learning</h2>
+        <h4 id="grey-button">Software engeneering</h4>
+        <h4 id="grey-button">Computer art</h4>
+        <h4 id="grey-button">Design</h4>
+        <h4 id="grey-button">Data</h4>
+        <h4 id="grey-button">Business</h4>
+        <h4 id="grey-button">Marketing</h4>
+      </div>
+      <!--Desktop: Thesis Section-->
       <div class="thesis">
         <div class="heading">
           <h2>Thesis Exhibit</h2>
@@ -228,8 +261,24 @@
           </div>
         </div>
       </div>
-      <!--Footer Section-->
+      <!--Mobile: Thesis Section-->
+      <div class="thesis-mobile">
+        <h2>Thesis Exhibit</h2>
+        <video src="./resources/Videos/thesis.mp4" controls width="320" height="240">
+        </video>
+      </div>
+      <!--Desktop: Footer-->
       <div class="footer">
+        <div class="copyright">
+          <p>&copy; Colmar Academy. All rights reserved</p>
+        </div>
+        <div class="terms-and-privacy">
+          <span>Terms</span>
+          <span>Privacy</span>
+        </div>
+      </div>
+      <!--Mobile:Footer-->
+      <div class="footer-mobile">
         <div class="copyright">
           <p>&copy; Colmar Academy. All rights reserved</p>
         </div>
