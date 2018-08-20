@@ -4,27 +4,32 @@ html{
   color: rgb(72,72,72);
 }
 h2{
+  font-size: 22.4px;
   font-size: 1.4rem;
   font-weight: 700;
   font-family: 'Archivo', sans-serif;
 }
 h3{
+  font-size: 22.4px;
   font-size: 1.4rem;
   font-weight: 400;
   font-family: 'Archivo', sans-serif;
 }
 h4{
+  font-size: 17.6px;
   font-size: 1.1rem;
   font-weight: 700;
   font-family: 'Archivo', sans-serif;
   line-height: 1.25;
 }
 h6{
+  font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
   font-family: 'Archivo', sans-serif;
 }
 h5{
+  font-size: 12.8px;
   font-size: .8rem;
   text-transform: uppercase;
   font-family: 'Archivo', sans-serif;
@@ -33,6 +38,7 @@ h5{
 p,
 li,
 span {
+  font-size: 12.8px;
   font-size: 0.8rem;
   font-family: 'Karla', sans-serif;
   line-height: 1.4;
@@ -42,10 +48,15 @@ span {
 
 /* Desktop:Page Layout*/
 .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header,
@@ -59,39 +70,62 @@ span {
 
 /* Desktop:Header*/
 .header{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  height: 64px;
   height: 4rem;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 0.8px solid rgb(200,200,200);
   position: fixed;
   z-index: 1;
   background-color: rgb(255,255,255);
 }
 .header .logo{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .header .logo object {
+  height: 32px;
   height: 2rem;
   width: auto;
+  margin-left: 24px;
   margin-left: 1.5rem;
 }
 .header .logo h2,
 .header .logo h3 {
   text-transform: uppercase;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: 8px;
   margin-right: 0.5rem;
 }
 
 .navigation li{
+  margin-right: 16px;
   margin-right: 1rem;
+  font-size: 16px;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -102,10 +136,15 @@ span {
 
 /*Desktop: "Learn Something New" Section*/
 .learn-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: rgb(240,240,240);
   position: relative;
+  top: 64px;
   top: 4rem;
 }
 .learn-new .img-container {
@@ -115,25 +154,36 @@ span {
 .learn-new .img-container img{
   width:95%;
   height: auto;
+  margin: 32px 24px;
   margin: 2rem 1.5rem;
 }
 .learn-new .column {
   width: 30%;
   height: auto;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 32px;
   margin-left: 2rem;
 }
 .learn-new .column h2,
 .learn-new .column h4,
 .learn-new .column p{
   width: 100%;
+  height: 32px;
   height: 2rem;
 }
 .learn-new .column h2{
   text-transform: uppercase;
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 .learn-new .column h4{
@@ -145,9 +195,11 @@ span {
   border-style: solid;
   border-width: 1.1px;
   border-radius: 0;
+  padding: 8px 8px;
   padding: 0.5rem 0.5rem;
   text-rendering: optimizeLegibility;
   background-color: white;
+  margin-top: 48px;
   margin-top: 3rem;
   width:80%;
   height: auto;
@@ -159,10 +211,13 @@ span {
 }
 /*Desktop:"Keep Practicing" Section*/
 .practice {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
   height:auto;
   position: relative;
+  top: 64px;
   top: 4rem;
 }
 .practice .left-column {
@@ -175,22 +230,33 @@ span {
 .practice .left-column .img-container img{
   width: 98%;
   height:auto;
+  margin: 32px 24px;
   margin: 2rem 1.5rem;
 }
 .practice .left-column .text-container h2,
 .practice .left-column .text-container p {
+  margin-bottom: 16px;
   margin-bottom: 1rem;
+  margin: 32px 24px;
   margin: 2rem 1.5rem;
 }
 .practice .right-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 32px;
   margin-top: 2rem;
+  margin-left: 32px;
   margin-left: 2rem;
 }
 .practice .right-column .small-img img{
   width:60%;
   height: auto;
+  margin: 16px 16px;
   margin: 1rem 1rem;
 }
 .practice .right-column .content {
@@ -202,6 +268,8 @@ span {
 .practice .right-column .campus {
   width: 100%;
   height: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .practice .right-column .guest-lecture{
@@ -209,12 +277,15 @@ span {
 }
 .practice .right-column .content h4,
 .practice .right-column .content p{
+  margin-bottom: 12.8px;
   margin-bottom: .8rem;
 }
 .practice .right-column .content h4{
+  margin-top: 16px;
   margin-top: 1rem;
 }
 .practice .right-column .content{
+  margin-right: 32px;
   margin-right: 2rem;
 }
 .practice .right-column .campus,
@@ -225,6 +296,7 @@ span {
 
 #read-more{
   cursor:pointer;
+  color:rgb(0, 172, 230);
 }
 #read-more:hover{
   text-decoration: underline;
@@ -234,10 +306,16 @@ span {
 .start-learning{
   width: 100%;
   height:auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
+  top: 64px;
   top: 4rem;
 }
 
@@ -247,16 +325,22 @@ span {
   background-color: rgb(232,232,232);
 }
 .start-learning .heading h2{
+  margin-top: 32px;
   margin-top: 2rem;
+  margin-bottom: 32px;
   margin-bottom: 2rem;
   text-align: center;
 }
  .start-learning .courses{
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: rgb(232,232,232);
 }
 .courses .soft,
@@ -271,16 +355,21 @@ span {
 }
 .courses .soft,
 .courses .data{
+  margin-left: 72px;
   margin-left: 4.5rem;
+  margin-right: 32px;
   margin-right: 2rem;
 }
 .courses .design,
 .courses .marketing{
+  margin-right: 72px;
   margin-right: 4.5rem;
+  margin-left: 32px;
   margin-left: 2rem;
 }
 
 .courses {
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 .courses .img-cont-courses img{
@@ -288,21 +377,29 @@ span {
   height: auto;
 }
 .courses .text-courses h4{
+  margin-top: 16px;
   margin-top: 1rem;
+  margin-bottom: 8px;
   margin-bottom: 0.5rem;
 }
 .courses .text-courses p{
+  margin-top: 8px;
   margin-top: 0.5rem;
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 .courses .text-courses{
+  margin-right: 16px;
   margin-right: 1rem;
+  margin-left: 16px;
   margin-left: 1rem;
 }
 .courses .data,
 .courses .business,
 .courses .marketing{
+  margin-top: 32px;
   margin-top: 2rem;
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 .courses h4:hover{
@@ -311,18 +408,26 @@ span {
 }
 /* Desktop:Thesis Section*/
 .thesis {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: auto;
   position: relative;
+  top: 64px;
   top: 4rem;
 }
 .thesis .heading {
   width: 100%;
   height: auto;
+  margin-top: 32px;
   margin-top: 2rem;
+  margin-bottom: 32px;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -330,8 +435,12 @@ span {
 .thesis .columns {
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .thesis .left-column{
   width: 60%;
@@ -340,31 +449,46 @@ span {
 .thesis .left-column video {
   width: 90%;
   height: auto;
+  margin-left: 24px;
   margin-left: 1.5rem;
+  margin-right: 24px;
   margin-right: 1.5rem;
+  margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 .thesis .left-column .text-container {
+  margin-left: 24px;
   margin-left: 1.5rem;
 }
 .thesis .left-column .text-container h4{
+  margin-bottom: 8px;
   margin-bottom: 0.5rem;
 }
 .thesis .left-column .text-container p{
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
 .thesis .right-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 32px;
   margin-left: 2rem;
+  margin-right: 16px;
   margin-right: 1rem;
   position: relative;
+  bottom: 11.2px;
   bottom:0.7rem;
 }
 .thesis .right-column .small-img img{
   width:60%;
   height: auto;
+  margin: 16px 16px;
   margin: 1rem 1rem;
 }
 .thesis .right-column .content {
@@ -375,20 +499,26 @@ span {
 .thesis .right-column .now-then {
   width: 100%;
   height: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   border: 0.8px solid rgb(200,200,200);
 }
 
 .thesis .right-column .content h4,
 .thesis .right-column .content p{
+  margin-bottom: 12.8px;
   margin-bottom: .8rem;
 }
 .thesis .right-column .content h4{
+  margin-top: 16px;
   margin-top: 1rem;
 }
 .thesis .right-column .content{
+  margin-right: 32px;
   margin-right: 2rem;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .thesis .right-column .fisma{
   background-color: rgb(232,232,232);
@@ -396,23 +526,33 @@ span {
 
 /*Desktop: Footer styling*/
 .footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
   border-top: 0.3px solid rgb(232,232,232);
   position: relative;
+  top: 64px;
   top: 4rem;
 }
 .footer .copyright,
 .footer .terms-and-privacy{
+  margin-top: 24px;
   margin-top: 1.5rem;
+  margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
 .footer .terms-and-privacy span {
+  margin-right: 24px;
   margin-right: 1.5rem;
 }
 .footer .copyright {
+  margin-left: 24px;
   margin-left: 1.5rem;
 }
 
@@ -426,11 +566,16 @@ span {
       display: none;
     }
     .header-mobile{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
       width: 100%;
       height: 4rem;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       position: fixed;
       z-index: 1;
       border-bottom: 0.8px solid rgb(200,200,200);
@@ -448,10 +593,17 @@ span {
     .learn-new-mobile{
       width: 100%;
       height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       background-color:rgb(240,240,240);
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       position: relative;
       top: 4rem;
     }
@@ -499,9 +651,14 @@ span {
     .practice-mobile {
       width: 100%;
       height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       position: relative;
       top: 4rem;
     }
@@ -509,8 +666,13 @@ span {
     .practice-mobile .orientation,
     .practice-mobile .campus,
     .practice-mobile .guest-lecture{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       width: 100%;
       height: auto;
       margin-left: 1rem;
@@ -551,11 +713,18 @@ span {
       display: none;
     }
     .start-learning-mobile{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       width: 100%;
       height: auto;
-      flex-direction: column;
-      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
     .start-learning-mobile h2{
       margin-top: 2rem;
@@ -583,8 +752,13 @@ span {
     .thesis-mobile{
       width: 100%;
       height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
 
     .thesis-mobile h2{
@@ -601,9 +775,13 @@ span {
       display: none;
     }
     .footer-mobile{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-around;
-      align-content: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-line-pack: center;
+          align-content: center;
       width: 100%;
       height: 4rem;
       position: relative;
@@ -640,9 +818,15 @@ span {
     z-index: 1;
     background-color:rgb(255,255,255);
     border-bottom: 0.8px solid rgb(200,200,200);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-tablet object{
     height: 2rem;
@@ -696,16 +880,26 @@ span {
     top: 4rem;
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .practice-mobile .orientation,
   .practice-mobile .campus,
   .practice-mobile .guest-lecture{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 30%;
     height: auto;
     margin-left: 3%;
@@ -758,7 +952,7 @@ span {
     margin-bottom: 0.5rem;
   }
   .courses .text-courses h4{
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .courses {
     margin-bottom: 1rem;
