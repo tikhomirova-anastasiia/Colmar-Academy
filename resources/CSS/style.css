@@ -1,7 +1,7 @@
 /*Universal Styles*/
 html{
   font-size: 16px;
-  color: 	rgb(72,72,72);
+  color: rgb(72,72,72);
 }
 h2{
   font-size: 1.4rem;
@@ -123,7 +123,7 @@ span {
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  justify-content: center;
   margin-left: 2rem;
 }
 .learn-new .column h2,
@@ -134,7 +134,6 @@ span {
 }
 .learn-new .column h2{
   text-transform: uppercase;
-  margin-top: 12rem;
   margin-bottom: 2rem;
 }
 .learn-new .column h4{
@@ -423,6 +422,9 @@ span {
     .header {
         display: none;
     }
+    .header-tablet{
+      display: none;
+    }
     .header-mobile{
       display: flex;
       justify-content: space-around;
@@ -449,7 +451,7 @@ span {
       display: flex;
       flex-direction: column;
       background-color:rgb(240,240,240);
-      justify-content: center;
+      align-items: center;
       position: relative;
       top: 4rem;
     }
@@ -461,14 +463,17 @@ span {
       margin-top: 2rem;
       margin-bottom: 2rem;
       margin-left: 1rem;
+      width: 90%;
+      height: auto;
     }
     .learn-new-mobile h4{
+      width: 90%;
+      height: auto;
       margin-left: 1rem;
       margin-bottom: 1.5rem;
     }
-    .learn-new-mobile .button{
+    #button-mobile {
       cursor: pointer;
-      display: inline-block;
       border-style: solid;
       border-width: 1.1px;
       border-radius: 0;
@@ -476,14 +481,13 @@ span {
       text-rendering: optimizeLegibility;
       background-color: white;
       margin-top: 3rem;
-      width: 15rem;
+      width: 60%;
       height: auto;
       text-align: center;
       position: relative;
       bottom: 2rem;
-      left: 4rem;
     }
-    .learn-new-mobile .button:hover{
+    #button-mobile:hover{
       color:white;
       background-color: black;
     }
@@ -607,14 +611,187 @@ span {
     }
 }
 
-/*Sections to eleminate from Desktop*/
-@media only screen and (min-width: 480px){
+/* Breakpoint after 480 px and up until the browser window is quite strteched, as page layout collapses*/
+@media only screen and (min-width: 480px) and (max-width:1024px){
+  /*Eliminate mobile styling*/
   .header-mobile{
     display: none;
   }
   .learn-new-mobile {
     display:none;
+  }
+  .start-learning-mobile{
+    display: none;
+  }
+  .thesis-mobile{
+    display: none;
+  }
+  .footer-mobile{
+    display: none;
+  }
+  /* Fix collapsing elements*/
+  .header {
+    display: none;
+  }
+  .header-tablet{
+    width: 100%;
+    height: 4rem;
+    position:fixed;
+    z-index: 1;
+    background-color:rgb(255,255,255);
+    border-bottom: 0.8px solid rgb(200,200,200);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header-tablet object{
+    height: 2rem;
+    width: auto;
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+  .header-tablet h2,
+  .header-tablet h3{
+    font-size: 1.3rem;
+    text-transform:uppercase;
+  }
+  .header-tablet h3{
+    margin-right: 4%;
+  }
+  #logo-tablet{
+    margin-right: 0;
+  }
+  .learn-new{
+    border-bottom: 0.8px solid rgb(200,200,200);
+  }
+  .learn-new .column h2{
+    font-size: 1.1rem;
+  }
+  .learn-new .column h4,
+  .learn-new .column h6{
+    font-size: 1rem;
+  }
+  .practice .right-column {
+    display: none;
+  }
+  .practice .left-column {
+    width: 100%;
+    height: auto;
+    border-bottom: 0.8px solid rgb(200,200,200);
+  }
+  .practice .left-column .img-container img{
+    width: 93%;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom:1rem;
+  }
+  .practice .left-column .text-container h2,
+  .practice .left-column .text-container p {
+    margin: 1rem 1.5rem;
+  }
+  .practice-mobile {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 
+  .practice-mobile .orientation,
+  .practice-mobile .campus,
+  .practice-mobile .guest-lecture{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    margin-left: 3%;
+  }
+  .practice-mobile .orientation{
+    margin-top: 1rem;
+  }
+  .practice-mobile .campus,
+  .practice-mobile .guest-lecture{
+    margin-top: 1rem;
+  }
+  .practice-mobile .guest-lecture{
+    margin-bottom: 2rem;
+  }
+
+  .practice-mobile img{
+    width: 95%;
+    height: auto;
+  }
+  .practice-mobile h4{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  }
+  .practice-mobile p{
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  #read-more-mobile {
+    color:rgb(0, 172, 230);
+    cursor: pointer;
+  }
+  #read-more-mobile:hover{
+    text-decoration: underline;
+  }
+  .courses .soft,
+  .courses .data,
+  .courses .design,
+  .courses .marketing,
+  .courses .business,
+  .courses .comp-art {
+    width: 20%;
+    height: auto;
+  }
+  .courses h5{
+    display: none;
+  }
+  .courses .text-courses p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .courses .text-courses h4{
+    font-size: 1rem;
+  }
+  .courses {
+    margin-bottom: 1rem;
+  }
+  .thesis .heading {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .thesis .right-column {
+    display: none;
+}
+  .thesis .left-column {
+    width: 100%;
+    height: auto;
+  }
+
+  }
+
+/* Sections to eliminate from Desktop*/
+@media only screen and (min-width: 1024px){
+  /*Eliminate mobile and tablet styling*/
+  .header-mobile{
+    display: none;
+  }
+  .header-tablet {
+    display: none;
+  }
+
+  .learn-new-mobile {
+    display:none;
   }
   .practice-mobile{
     display: none;
